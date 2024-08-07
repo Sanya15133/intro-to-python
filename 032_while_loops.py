@@ -50,6 +50,9 @@ print("Function: add_cats_repeatedly")
 
 def add_cats_repeatedly(word_list, count):
   # ...
+  length = len(word_list)
+  while len(word_list) < length + count:
+    word_list.append('cats')
   return word_list
 
 check_that_these_are_equal(
